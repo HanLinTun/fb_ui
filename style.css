@@ -1,0 +1,531 @@
+:root {
+    --fb-main: #0f8ff2;
+    --primary-text: #e4e6eb;
+    --bg-color: #18191a;
+    --semi-dark: #242526;
+    --soft-dark: #3a3b3c;
+    --soft-dark2: #484849;
+    --soft-dark3: #6d6d6e;
+    --danger: #d42844;
+    --success: #326840;
+    --warning: #f7b928;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    color: var(--primary-text);
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.nav {
+    background-color: var(--semi-dark);
+    display: flex;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+}
+
+.left {
+    width: 25%;
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+}
+
+.logo-img {
+    width: 40px;
+}
+
+.search {
+    margin-left: 10px;
+    background-color: var(--soft-dark);
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.search-icon {
+    margin: 5px 10px;
+    font-size: 1.1em;
+}
+
+.search-input {
+    background-color: var(--soft-dark);
+    border: none;
+    height: 100%;
+    border-radius: 20px;
+    font-size: 1.1em;
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+
+/*center*/
+
+.center {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-box {
+    width: 120px;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0px 5px;
+    transition: 0.5s;
+}
+
+.center-box:hover {
+    background-color: var(--soft-dark);
+    border-radius: 5px;
+}
+
+.active {
+    border-bottom: 5px solid var(--fb-main);
+}
+
+.active:hover {
+    background-color: var(--soft-dark);
+    border-radius: 0px;
+}
+
+.active-icon {
+    color: var(--fb-main);
+}
+
+.center-icon {
+    font-size: 1.5em;
+}
+
+.noti {
+    background-color: var(--danger);
+    border-radius: 5px;
+    position: absolute;
+    top: 5px;
+    right: 45px;
+    width: 15px;
+    text-align: center;
+}
+
+.right {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 1px;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px 10px;
+    transition: .5s;
+}
+
+.profile:hover {
+    background-color: var(--soft-dark);
+    border-radius: 10px;
+}
+
+.pp-img {
+    width: 30px;
+    border-radius: 50%;
+}
+
+.pp-span {
+    color: var(--primary-text);
+    font-weight: bolder;
+    margin-left: 5px;
+}
+
+.noti-box {
+    display: flex;
+}
+
+.notification {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 5px 15px;
+    background-color: var(--soft-dark);
+    border-radius: 50%;
+}
+
+.notification:hover {
+    background-color: var(--soft-dark2);
+    border-radius: 50%;
+}
+
+.message.div {}
+
+.notification>.message-span {
+    background-color: var(--danger);
+    position: absolute;
+    border-radius: 5px;
+    top: 0px;
+    right: -9px;
+}
+
+
+/********************************Body Starts*********************************/
+
+.main-div {
+    margin-top: 10px;
+    display: flex;
+}
+
+.others {
+    width: 25%;
+    height: 100vh;
+}
+
+.real-others {
+    width: 25%;
+    height: 93vh;
+    position: fixed;
+    top: 80px;
+    left: 0px;
+    overflow: scroll;
+}
+
+.others-profile {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    margin: 0px 15px;
+    padding: 5px 10px;
+    position: relative;
+}
+
+.others-pp-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.others-pp-span {
+    color: var(--primary-text);
+    font-weight: bolder;
+    margin: 5px;
+    font-size: 1.3em;
+}
+
+.see-more {
+    margin-left: 10px;
+    background-color: var(--soft-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 5px 30px 15px 30px;
+    padding: 5px;
+}
+
+.see-more-span {
+    font-size: 1.5em;
+}
+
+.new-feed {
+    width: 50%;
+}
+
+.go-center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.go-center2 {
+    width: 70%;
+}
+
+.my-day-container {
+    display: flex;
+    position: relative;
+    margin: 0px 50px;
+}
+
+.my-day {
+    position: relative;
+    width: 130px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.plus-icon {
+    width: 30px;
+    height: 30px;
+    background-color: var(--soft-dark3);
+    border-radius: 50%;
+    border: 3px solid var(--fb-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6px;
+    margin-left: 9px;
+}
+
+.feather-plus {
+    font-size: 1.2em;
+}
+
+.my-day-owner {
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    border: 3px solid var(--fb-main);
+    position: absolute;
+    top: 5px;
+    left: 9px;
+}
+
+.my-day-text {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    color: var(--primary-text);
+}
+
+.scroll-arrow {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 110px;
+    right: -25px;
+    z-index: 3;
+    border-radius: 50%;
+    background-color: var(--soft-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-post {
+    margin-top: 20px auto;
+    background-color: var(--semi-dark);
+    border-radius: 5px;
+    width: 100%;
+}
+
+.add-post-up {
+    display: flex;
+}
+
+.add-post-img {
+    width: 50px;
+    border-radius: 50%;
+    margin: 30px 5px 30px 30px;
+}
+
+.write-post {
+    display: flex;
+    flex-grow: 1;
+    margin: 30px 30px 30px 5px;
+}
+
+.write-post-input {
+    background-color: var(--soft-dark);
+    border: none;
+    height: 100%;
+    border-radius: 20px;
+    font-size: 1.1em;
+    display: flex;
+    flex-grow: 1;
+    padding: 0px 10px;
+}
+
+.line {
+    border: 1px solid var(--soft-dark2);
+    margin: 0px 30px;
+}
+
+.add-post-down {
+    display: flex;
+}
+
+.datas {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    transition: 0.4s;
+}
+
+.datas:hover {
+    background-color: var(--soft-dark);
+    border-radius: 5px;
+}
+
+.datas>i {
+    margin: 15px 5px;
+    padding: 5px;
+    font-size: 1.5em;
+}
+
+.data>span {
+    margin: 15px 5px;
+    padding: 5px;
+    font-size: 1.5em;
+}
+
+
+/****************************Post List**********************/
+
+.post-list {
+    width: 100%;
+}
+
+.khin-wint-wah {
+    margin-top: 20px;
+    background-color: var(--semi-dark);
+    border-radius: 5px;
+}
+
+.author {
+    display: flex;
+    position: relative;
+}
+
+.author-pp {
+    width: 50px;
+    height: 50px;
+    margin: 3px;
+    padding: 5px;
+}
+
+.author-pp>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.name {
+    margin: 3px;
+    padding: 5px;
+}
+
+.time {
+    margin: 3px 5px;
+    padding: 5px;
+}
+
+.three-dot {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    font-size: 2em;
+}
+
+.text {
+    margin-left: 15px;
+}
+
+.photo {
+    width: 97%;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.photo>img {
+    width: 100%;
+}
+
+.like-comment-share {}
+
+.lcs-up {
+    margin: 10px;
+    padding: 10px;
+}
+
+.like-icons {}
+
+.like-icons-first {
+    display: flex;
+    justify-content: space-between;
+}
+
+.like-icons-first>div>img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-content: center;
+}
+
+.like-icons-first>div>span {
+    font-size: 1.3em;
+}
+
+.lcs-down {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 10px;
+}
+
+.chat-box {
+    width: 25%;
+    height: 100vh;
+}
+
+.real-chat-box {
+    width: 25%;
+    height: 93vh;
+    position: fixed;
+    top: 80px;
+    right: 0px;
+    overflow: scroll;
+}
+
+.contact {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-icons {
+    margin-right: 15px;
+}
+
+.contact-icons>i {
+    font-size: 1.3em;
+}
+
+.active-now {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(64, 226, 64);
+    position: absolute;
+    top: 35px;
+    left: 40px;
+}
